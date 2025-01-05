@@ -1,8 +1,10 @@
 {
-    "routes": [
-      { "src": "/api/(.*)", "dest": "/api/$1" },
-      { "handle": "filesystem" },
-      { "src": "/(.*)", "dest": "/public/$1" }
-    ]
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/public/$1" }
+  ],
+  "env": {
+    "VERCEL_API_TOKEN": "N6CrF6DY5X8Wk0mpaAGyY0sP" 
   }
-  
+}
